@@ -1,0 +1,269 @@
+/*TAKES AWAY ALL MARGIN AND PADDING*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* PAGE BODY */
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAV BAR STYLING*/
+.logo{
+	color:#FFFFFF ;
+}
+
+nav{
+	background-color: #00bfff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	padding-right: 30px ;
+	padding-left: 30px;
+}
+
+/* Add this style to override the global styles for your table */
+.reservations-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.reservations-table th, .reservations-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.reservations-table th {
+  background-color: #00bfff;
+  color: white;
+}
+
+.reservations-table tr:hover {
+  background-color: #ddd;
+}
+
+ul{
+	list-style: none;	
+}
+
+.firstMenu > li{
+	display: inline-block;
+	padding: 10px 15px;
+	/*TRANSITIONS*/
+	transition: all 1s ease;
+	position: relative;
+}
+
+.firstMenu li:hover{
+	cursor: pointer;
+	background-color: #0091ff ;
+}
+
+#dropDown{
+    display: none;
+	position: absolute;
+	width: 150%;
+	left: 0;
+	top: 100%;
+	background-color: #0055ff;
+	text-align:left;
+}
+
+nav a{
+	text-decoration: none;
+	color:#242426 ;
+}
+
+#dropDown li{
+	padding: 10px 15px;
+}
+
+/* DROPDOWN MENU */
+#dropDown.active{
+	display: block;
+}
+
+/* SECTION 1*/
+section{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items:center; 
+}
+
+/* SECTION 2*/
+section.section2{
+	min-height: 30vh;
+	display: flex;
+	justify-content: center;
+	align-items:center; 
+}
+ section.header{
+	flex-direction: column!important;
+}
+
+.header{
+	background: url('TUD.jpeg') no-repeat fixed center;
+}
+
+section button{
+	background-color: #00bfff;
+	border: none;
+	padding: 10px 20px;
+	font-weight: bold;
+	border-radius: 5px;
+	margin-top: 10px;
+	font-size: clamp(1rem, -0.875rem + 5vw, 2.5rem);
+	transition:all 1s ease;
+}
+
+section button a{
+	text-decoration: none;
+	color: #010326;
+	transition: 1s ease;
+}
+
+section button:hover{
+	background-color: #010326;
+	color: #00bfff;
+}
+
+section button a:hover{
+	color: #fff ;
+}
+
+section:nth-child(2){
+	color: #fff;
+}
+
+ section:nth-child(3){
+	color:#010326;
+	background: #fff;
+} 
+
+ section:nth-child(4){
+	color: #fff;
+	background-color:#f31c5c;
+}
+
+section h1{
+	font-size: 80px;
+	text-align: center;
+}
+
+section h2{
+	font-size: 40px;
+	text-align: center;
+}
+
+section h3{
+	margin-bottom: 5px;
+}
+
+section .info{
+	display: flex;
+}
+
+/* STYLING FOR BOXES THAT HOLDS TEXT BLOCKS */
+
+section .info .infoSection{
+	background: #f31c5c;
+	color: #fff;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 5px;
+}
+
+section .info .colorChange{
+	background: #00bfff;
+	
+	color: #010326 ;
+}
+
+
+/* STYLING FOR THE MORE INFO BUTTONS AT BOTTOM OF PAGE */
+section .moreInfo{
+	background-color: #f31c5c;
+	color: white;
+	font-size: 30px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.moreInfo:hover{
+	background: #111E6C;
+	animation: none;
+}
+
+/* STYLE FOR INPUT FIELDS*/
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+/* STYLE FOR password FIELDS*/
+  input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+/* STYLE FOR EMAIL FIELD */
+  input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+  
+/* THE SUBMIT BUTTON */
+  button[type=submit] {
+    background-color: #00bfff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* BACKGROUND OF THE FORM */
+  .container {
+    border-radius: 5px;
+    background-color: #7FFFD4;
+    padding: 20px;
+}
+
+/* FOOTER */
+footer{
+	text-align: center;
+	background:#00bfff;
+	color:white;
+	font-size: 1em;
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+}
+  
+footer>p{
+	margin-top: calc(20px - 0.5em);
+	height: auto;
+}
